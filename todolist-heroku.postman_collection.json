@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "d33a0aff-0506-42da-827f-a4096968599b",
+		"name": "todolist-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有待辦",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://floating-lowlands-09883.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"floating-lowlands-09883",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆待辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://floating-lowlands-09883.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"floating-lowlands-09883",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://floating-lowlands-09883.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"floating-lowlands-09883",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆待辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://floating-lowlands-09883.herokuapp.com/todos/4944d188-3d7e-49fd-81bb-7fa7e7b2d749",
+					"protocol": "https",
+					"host": [
+						"floating-lowlands-09883",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"4944d188-3d7e-49fd-81bb-7fa7e7b2d749"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆待辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要刷牙100\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://floating-lowlands-09883.herokuapp.com/todos/3a5bf933-e195-4f30-98ba-bf521c4486f5",
+					"protocol": "https",
+					"host": [
+						"floating-lowlands-09883",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"3a5bf933-e195-4f30-98ba-bf521c4486f5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
